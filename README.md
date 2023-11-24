@@ -1,7 +1,7 @@
 # Node.js Express & MongoDB: CRUD Rest APIs
 
 ## Create order
-curl --location 'http://localhost:8080/api/orders' \
+curl --location 'http://localhost:8080/api/orders/create' \
 --header 'Content-Type: application/json' \
 --data '{
 "order_id": "124",
@@ -12,7 +12,7 @@ curl --location 'http://localhost:8080/api/orders' \
 }'
 
 ## Get all orders
-curl --location 'http://localhost:8080/api/orders/create'
+curl --location 'http://localhost:8080/api/orders'
 
 ## Get order by id
 curl --location 'http://localhost:8080/api/orders/search/6560554d7ca9730c508b9500'
