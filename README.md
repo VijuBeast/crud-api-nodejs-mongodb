@@ -12,13 +12,13 @@ curl --location 'http://localhost:8080/api/orders' \
 }'
 
 ## Get all orders
-curl --location 'http://localhost:8080/api/orders'
+curl --location 'http://localhost:8080/api/orders/create'
 
 ## Get order by id
-curl --location 'http://localhost:8080/api/orders/6560554d7ca9730c508b9500'
+curl --location 'http://localhost:8080/api/orders/search/6560554d7ca9730c508b9500'
 
 ## Update order by id
-curl --location --request PUT 'http://localhost:8080/api/orders/6560554d7ca9730c508b9500' \
+curl --location --request PUT 'http://localhost:8080/api/orders/update/6560554d7ca9730c508b9500' \
 --header 'Content-Type: application/json' \
 --data '{
 "order_id": "124",
@@ -29,7 +29,7 @@ curl --location --request PUT 'http://localhost:8080/api/orders/6560554d7ca9730c
 }'
 
 # Delete order by id
-curl --location --request DELETE 'http://localhost:8080/api/orders/6560554d7ca9730c508b9500'
+curl --location --request DELETE 'http://localhost:8080/api/orders/delete/6560554d7ca9730c508b9500'
 
 ## Project setup
 ```

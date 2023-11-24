@@ -4,19 +4,19 @@ module.exports = app => {
   var router = require("express").Router();
 
   // Create a new orders
-  router.post("/", orders.create);
+  router.post("/create", orders.create);
 
   // Retrieve all orders
   router.get("/", orders.findAll);
 
   // Retrieve a single order with id
-  router.get("/:id", orders.findOne);
+  router.get("/search/:id", orders.findOne);
 
   // Update a order with id
-  router.put("/:id", orders.update);
+  router.put("/update/:id", orders.update);
 
   // Delete a order with id
-  router.delete("/:id", orders.delete);
+  router.delete("/delete/:id", orders.delete);
 
   // Delete all order
   router.delete("/", orders.deleteAll);
